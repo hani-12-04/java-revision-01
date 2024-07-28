@@ -1,4 +1,4 @@
-package oop.src;
+package section7.src;
 import java.util.ArrayList;
 
 public class IceCream {

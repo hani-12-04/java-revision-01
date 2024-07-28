@@ -1,4 +1,4 @@
-package oop.src;
+package section7.src;
 
 public class Book {
     private String author;

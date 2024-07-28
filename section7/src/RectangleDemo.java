@@ -1,4 +1,4 @@
-package oop.src;
+package section7.src;
 
 public class RectangleDemo {
     public static void main(String[] args) {
