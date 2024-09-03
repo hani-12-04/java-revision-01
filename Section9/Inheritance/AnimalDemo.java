@@ -2,24 +2,24 @@ package Section9.Inheritance;
 
 public class AnimalDemo {
     public static void main(String[] args) {
-        Animal myAnimal = new Animal("Bob", 80);
-        Dog myDog = new Dog("Rod", 50);
-        Cat myCat = new Cat("Tokyo", 30);
+        Animal[] animals = new Animal[5];
 
+        animals[0] = new Dog("Sam", 100);
+        animals[1] = new Cat("Tokyo", 30);
+        animals[2] = new Cat("Luna", 40);
+        animals[3] = new Cat("Cairo", 50);
+        animals[4] = new Dog("Pat", 70);
+          
 
-        System.out.println("Name " + myAnimal.getName());
-        System.out.println("Weight " + myAnimal.getWeight());
-        System.out.println("Animal says, " + myAnimal.makeNoise());
-
-        System.out.println("Name " + myDog.getName());
-        System.out.println("Weight " + myDog.getWeight());
-        System.out.println("Animal says, " + myDog.makeNoise());
-
-        
-        System.out.println("Name " + myCat.getName());
-        System.out.println("Weight " + myCat.getWeight());
-        System.out.println("Animal says, " + myCat.makeNoise());
-        
+        printAnimals(animals);
     }
     
+    public static void printAnimals(Animal[] animals) {
+        for(Animal animal : animals) {
+            System.out.println(animal.getName());
+            System.out.println(animal.getWeight());
+            System.out.println(animal.makeNoise());
+        }
+        
+    }
 }
