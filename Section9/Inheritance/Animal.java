@@ -1,6 +1,6 @@
 package Section9.Inheritance;
 
-public class Animal {
+public abstract class Animal {
     // creating fields
     private String name;
     private double weight;
@@ -28,9 +28,6 @@ public class Animal {
         this.weight = weight;
     }
 
-    public String makeNoise() {
-        return "Grrr!";
-    }
-    
+    public String makeNoise();   
     
 }
